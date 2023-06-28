@@ -8,7 +8,7 @@ const errorMsg = document.getElementById('error-msg')
 if (host) host.innerText = `${ window.location.host }/`
 
 const errors = {
-	400: "Error: Couldn't generate PDF.",
+	400: 'Error: Could not generate PDF.',
 	404: 'Error: Invalid URL. Please check your URL and try again.',
 	500: 'Error: Internal Server Error. Please try again or contact support@techfiddle.io with the full error context.'
 }

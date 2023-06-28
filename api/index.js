@@ -17,7 +17,7 @@ module.exports = async (req, res) => {
 		console.log(`Converting: ${ url }`)
 		const pdfBuffer = await getPdf(url)
 
-		if (!pdfBuffer) return res.status(400).send("Error: Couldn't generate PDF")
+		if (!pdfBuffer) return res.status(400).send('Error: Could not generate PDF')
 
 		// Instruct browser to cache PDF for maxAge ms
 		if (process.env.NODE_ENV !== 'development') res.setHeader('Cache-control', `public, max-age=${ maxAge }`)
